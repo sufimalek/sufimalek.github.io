@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% if page.toc %}
+    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+{% endif %}
+
+<div class="content">
+    Hi I'm Sufiyan Malek a self taught full-stack developer.
+    <br/><br/>
+    I'm currently living in Vadodara, India, but originally from Surat, India.<br/>
+    <img src="/img/navigation.png">
+    <br/>It's only 158 KM distance between hometown and current living place. I usually travel once in a week or once in a month.
+    <br/><br/>
+    I'm an absolute geek and love geeking out on all things Linux, PHP and JavaScript.
+    <br/><br/>
+    My favorite development stack at the moment is React, PHP with Symfony, API Platform, Node, MongoDB, Redis and Arch linux are.
+    <br/><br/>
+    Values I hold high are loyalty, reliability, authenticity and helping other achieve their success.
+    Which is why I see projects through to the end and why I believe in not only creating beautiful software but also reliable and reflect the client's brand and that is easy to use so that it does not distract the a user experience
+    <br/><br/>
+    Whether it’s creating servers in Node, connecting to MongoDB databases or designing unique user experiences per device whilst still maintaining a consistent brand experience I will bring your ideas to life.
+
+</div>
+
+<div>
+    {{ content }}
+</div>
+
+<div>
+    <p class="title is-4">Skills</p>
+    Libraries and Frameworks
+    React, Flux, Redux, Jquery, Velocity, Node, Express, Ramda, Underscore/Lodash, Velocity, MongoDB, Mocha, Tape, Bootstrap, UiKit, Browserify, Webpack.
+
+    Languages
+    HTML5, CSS3, Javascript, ES6, Bash, AJAX, Excel VBA.
+
+    Tools and Apps
+    Chrome Dev Tools, NPM, SASS/ LESS, Git/Github, Atom, Sublime Text, Photoshop, Eslint, Gulp, Google Drive, Trello, Linux (Arch), Windows, Mac.
+
+    Business
+    Management information systems design, Financial modelling, Costing models, Financial analysis, Budgeting and Forecasting.
+
+    Courses
+    Rails Backend Developer, Advanced JavaScript, MongoDB Certified Developer, CIMA Certificate in Business Accounting, NVQ Programming, NVQ Software Design Higher National Diploma Fashion Design & Management, TEFL accredited 20 hours
+</div>
