@@ -2,9 +2,15 @@
 layout: default
 ---
 
+<div style="padding-bottom: 30px;" >
+    <div style="position:relative; display: inline-block;">
+        <p>Published: {% if page.date %}{% include page-date.html %}{% endif %}</p>
+    </div>
+    <div style="float: right">
+        <p>{% if site.read_time %}{% include read-time.html %}{% endif %}</p>
+    </div>
+</div>
 <div class="content">
-
-    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
 
     {{ content }}
 </div>
@@ -14,6 +20,18 @@ layout: default
     <span class="tag is-primary">{{ tag }}</span>
     {% endfor %}
 </div>
+
+{% for page in site.pages %}
+<!--{% if page.categories contains 'tech' %}-->
+<div class="item">
+    <h3><a href="{{ page.url }}">
+        {{ page.title }}
+    </a></h3>
+
+    <p>{{page.description}}</p>
+</div>
+<!--{% endif %}-->
+{% endfor %}
 
 {% unless site.hide_share_buttons %}
 {% include share-buttons.html %}

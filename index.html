@@ -1,72 +1,114 @@
 ---
 layout: default
-title: Web Dev & Author
+title: Web Developer
 subtitle: |
-    Making effective, modern, responsive websites<br>
-    and helping others do the same!
+    With infinite possibilities<br>
 permalink: /
 image: /img/about-hero.jpg
 description: I'm a full time web developer and a part time author, making effective, modern websites
 hero_image: /img/about-hero.jpg
-hero_height: is-fullheight
+hero_height: is-medium
 ---
 
 
-<div class="columns is-multiline is-mobile is-centered">
+<!--<div class="columns is-multiline is-mobile is-centered">-->
 
-    <div class="column is-2-desktop  is-4-tablet is-6-mobile">
-        <img src="/img/slu.png" width="100%" alt="Who am I?"/>
-    </div>
+<!--    <div class="column is-2-desktop  is-4-tablet is-6-mobile">-->
+<!--        <img src="/img/slu.png" width="100%" alt="Who am I?"/>-->
+<!--    </div>-->
 
-    <div class="column is-6-desktop is-6-tablet is-12-mobile content">
-        <h2 class="has-text-centered">Who am I?</h2>
-        <p> Hi! I'm Sufiyan Malek a self taught full-stack developer based in Surat, India.</p>
+<!--    <div class="column is-6-desktop is-6-tablet is-12-mobile content">-->
+<!--        <h2 class="has-text-centered">Who am I?</h2>-->
+<!--        <p> Hi! I'm Sufiyan Malek a self taught full-stack developer based in Surat, India.</p>-->
 
-        <p>I have vast experience of web development, from backend PHP coding specialising in Symfony to frontend HTML, CSS, Sass &amp; JavaScript to Linux commands and bash scripts.</p>
+<!--        <p>I have vast experience of web development, from backend PHP coding specialising in Symfony to frontend HTML, CSS, Sass &amp; JavaScript to Linux commands and bash scripts.</p>-->
 
-        <p>Web development is great. I really enjoy being able to release my creativity and solve challenges. This creativity then led me into writing. I've written a couple of <a href="/books/" title="Check out my books">books</a> that are available on the Amazon Kindle store. Everyone needs a side project!</p>
+<!--        <p>Web development is great. I really enjoy being able to release my creativity and solve challenges. This creativity then led me into writing. I've written a couple of <a href="/books/" title="Check out my books">books</a> that are available on the Amazon Kindle store. Everyone needs a side project!</p>-->
 
-<!--        <p>I write a <a href="/blog/" title="Check out my blog">blog</a> on this site as well as writing on <a href="https://dev.to/sufi_malek"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Sufiyan Malek's DEV Profile" height="30" width="30"></a> and <a href="https://medium.com/@sufi_malek" title="Medium.com">Medium.com</a> with technology, web and other random topics, so make sure you check them out too.</p>-->
-    </div>
-</div>
+<!--&lt;!&ndash;        <p>I write a <a href="/blog/" title="Check out my blog">blog</a> on this site as well as writing on <a href="https://dev.to/sufi_malek"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Sufiyan Malek's DEV Profile" height="30" width="30"></a> and <a href="https://medium.com/@sufi_malek" title="Medium.com">Medium.com</a> with technology, web and other random topics, so make sure you check them out too.</p>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
 
-
-{% for post in site.posts limit:1 %}
 <section class="section">
     <div class="columns is-multiline">
         <div class="column is-12">
             <div class="content">
-                <h2 class="has-text-centered">Latest Post</h2>
+                <h2 class="has-text-centered">Featured Posts</h2>
             </div>
         </div>
-        <div class="column is-12">
-            <section class="hero is-dark">
-                <div class="hero-body">
-                    <div class="columns">
-                        <div class="column is-4">
-                            <img src="{{ post.image | replace: 'http:', 'https:' }}" alt="{{ post.title }}" />
-                        </div>
-                        <div class="column is-8">
-                            <div class="has-text-centered">
-                                <a href="{{ post.url | prepend: site.baseurl }}">
-                                    <h3 class="title is-4">{{ post.title }}</h3>
-                                </a>
-                                <p class="subtitle is-6">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-                                <div class="content">
-                                    <p>{{ post.excerpt }}</p>
-                                </div>
-                                <a href="{{ post.url | prepend: site.baseurl }}" class="button is-info">
-                                    Read more...
-                                </a>
-                            </div> 
-                        </div>
+
+        {% for post in site.posts %}
+        {% if post.categories contains 'featured' %}
+        <div class="column is-12-desktop is-6-tablet">
+
+            <a href="{{ site.baseurl }}{{ post.url }}">
+
+                <div class="card">
+
+<!--                    {% if post.image %}-->
+<!--                    <div class="card-image">-->
+<!--                        <figure class="image is-4by3">-->
+<!--                            <img src="{{ post.image }}" alt="{{ post.title }}" style="object-fit: contain"/>-->
+<!--                        </figure>-->
+<!--                    </div>-->
+<!--                    {% endif %}-->
+                    <div class="card-content">
+
+                        <p class="title is-4">{{ post.title }}</h2>
+<!--                        <p class="subtitle is-4">{{ post.excerpt }}</p>-->
+<!--                        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
                     </div>
                 </div>
-            </section>
+
+            </a>
+
         </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </section>
-{% endfor %}
+
+<!--{% for category in site.categories %}-->
+<!--<h4><a class="" href="{{ category | first }}">{{ category[0] }}</a></h4>-->
+<!--{% endfor %}-->
+
+
+<!--{% for post in site.posts limit:1 %}-->
+<!--<section class="section">-->
+<!--    <div class="columns is-multiline">-->
+<!--        <div class="column is-12">-->
+<!--            <div class="content">-->
+<!--                <h2 class="has-text-centered">Latest Post</h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="column is-12">-->
+<!--            <section class="hero is-dark">-->
+<!--                <div class="hero-body">-->
+<!--                    <div class="columns">-->
+<!--                        <div class="column is-4">-->
+<!--                            <img src="{{ post.image | replace: 'http:', 'https:' }}" alt="{{ post.title }}" />-->
+<!--                        </div>-->
+<!--                        <div class="column is-8">-->
+<!--                            <div class="has-text-centered">-->
+<!--                                <a href="{{ post.url | prepend: site.baseurl }}">-->
+<!--                                    <h3 class="title is-4">{{ post.title }}</h3>-->
+<!--                                </a>-->
+<!--                                <p class="subtitle is-6">Published: {{ post.date | date: "%b %-d, %Y" }}</p>-->
+<!--                                <div class="content">-->
+<!--                                    <p>{{ post.excerpt }}</p>-->
+<!--                                </div>-->
+<!--                                <a href="{{ post.url | prepend: site.baseurl }}" class="button is-info">-->
+<!--                                    Read more...-->
+<!--                                </a>-->
+<!--                            </div> -->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--{% endfor %}-->
 
 <!--<section class="section">-->
 <!--    <div class="columns is-multiline is-centered">-->

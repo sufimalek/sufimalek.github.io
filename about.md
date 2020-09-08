@@ -5,7 +5,7 @@ order: 5
 permalink: /about/
 description: "Hi! My name is Sufiyan Malek and I'm a full time web developer as a Full stack developer"
 image: /img/books.jpg
-hero_image: /img/about-hero.jpg
+hero_image: /img/slu-hero.jpg
 toc: true
 show_sidebar: true
 ---

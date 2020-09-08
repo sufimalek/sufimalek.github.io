@@ -6,11 +6,15 @@ description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
 #baseurl: "/site"
 url: "https://www.sufimalek.github.io"
-permalink: pretty
+#permalink: pretty
+permalink: /:title/
 favicon: /img/logo_200x200.png
 gh_sponsor: sufimalek
 #hide_share_buttons: true
-
+read_time: true # reading time estimates, e.g. true
+words_per_minute: 130 # 200
+mathjax: # MathJax equations, e.g. true
+date_format: "%B %-d, %Y"
 paginate: 5
 paginate_path: "/blog/page:num"
 
@@ -67,7 +71,7 @@ defaults:
 
 markdown: kramdown
 highlighter: rouge
-
+include: ['_pages']
 footer_menu: example_footer_menu
 
 collections:
