@@ -19,7 +19,7 @@ Many users finding an issue while using EasyAdmin3 or upgrading from EasyAdmin2 
 
 ## No route found for &quot;GET /admin&quot; (404 Not Found)
 
-![Router Matched]({{ '/img/admin_no_route_found.png' | absolute_url }}){: .align-center}
+![Router Matched](/img/admin_no_route_found.png){: .align-center}
 
 ### Main issue is `"/admin"` route and that's missing.
 
@@ -55,7 +55,7 @@ and you can also use below command to match exact route and check:
 
 If route exists then it will show below matched route detail with it's controller and options:
 
-![Router Matched]({{ '/img/admin_router_matched.png' | absolute_url }}){: .align-center}
+![Router Matched](/img/admin_router_matched.png){: .align-center}
 
 else it will show
 
