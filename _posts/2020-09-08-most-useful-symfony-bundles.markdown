@@ -125,7 +125,7 @@ Friendly Symfony paginator to paginate everything.
 KnpPagination Symfony bundle is used to sort and paginate your website content. It is based on Knp Pager — a component that introduced a different way for handling pagination.
 
 
-![KNP Paginator](/img/1_wLEcrhb5shrScRk5nfvwIg.png "Example Twitter Card")
+![KNP Paginator](/img/1_wLEcrhb5shrScRk5nfvwIg.png)
 
 Depending on the requests, it offers the possibility of adding sorting or filtering functionalities. 
 Paginator Bundle does not require initialization of precise parameters and can be customized to suit projects needs.
