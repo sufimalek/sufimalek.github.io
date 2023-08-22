@@ -4,6 +4,7 @@ layout: default
 title: Open Source Projects
 keywords: open-source,GitHub,projects
 description: Open source changes the world.
+menu: Open Source
 permalink: /open-source/
 ---
 

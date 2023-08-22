@@ -4,7 +4,7 @@ title: Categories
 description: haha you found my article gene bank
 keywords: categories
 comments: false
-menu: Category
+menu: Categories
 permalink: /categories/
 ---
 

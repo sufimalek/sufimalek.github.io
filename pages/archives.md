@@ -4,7 +4,7 @@ title: Archives
 description: Archive by year
 keywords: Archive
 comments: false
-menu: Archive
+menu: Archives
 permalink: /archives/
 ---
 
