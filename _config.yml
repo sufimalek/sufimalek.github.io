@@ -1,0 +1,207 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://sufimalek.github.io/
+date_format: "ordinal"
+title: Sufiyan_Malek
+subtitle: "Developer Enthusiast"
+description: "web developer"
+keywords: sufiyan, malek, surat, vadodara
+timezone: Asia/Mumbai
+encoding: "utf-8"
+# The year displayed in the lower left corner of the page
+since: 2023
+# Source repository, please replace it with your own
+repository: sufimalek/sufimalek.github.io
+# CDN acceleration configuration for css and js resources
+cdn:
+    jsdelivr:
+        enabled: false
+# Optional component configuration
+components:
+    # Share
+    # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
+    share:
+        enabled: false
+        hide-platforms: qq,facebook
+    # No Suanzi Visit Statistics
+    busuanzi:
+        enabled: false
+        start_date: 2020-05-03
+    # My Popular Repositories
+    side_bar_repo:
+        enabled: true
+        limit: 5
+    # Article word count
+    word_count:
+        enabled: true
+    # The upper right corner of the page, and the QR code of the "About" page
+    # Modify the picture please replace: assets/images/qrcode.jpg
+    qrcode:
+        enabled: false
+        image_alt: boring programmer
+    # Which view to use for the wiki index page, support list (list)/category (category)
+    wiki:
+        view: cate
+    # Picture light box effect function
+    fancybox:
+        enabled: false
+# Compress page content
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+# Code highlighting style, see the list of supported themes https://github.com/mzlogin/rouge-themes
+highlight_theme: github
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Sufiyan Malek
+organization: 
+organization_url: 
+github_username: suf_malek
+location: Vadodara, India
+email: sufiyanmalek78@gmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+#   -
+#     href: /
+#     label: Home
+
+  -
+    href: /categories/
+    label: Categories
+
+  -
+    href: /archives/
+    label: Archives
+    mobile-hidden: true
+
+  -
+    href: /open-source/
+    label: Open Source
+    mobile-hidden: true
+
+  -
+    href: /projects/
+    label: Projects
+    mobile-hidden: false
+
+#   -
+    # href: /fragments/
+    # label: Fragments
+
+#   -
+#     href: /wiki/
+#     label: Wiki
+
+#   -
+#     href: /links/
+#     label: Links
+#     mobile-hidden: true
+
+  -
+    href: /about/
+    label: About
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+# permalink: /:year/:month/:day/:title/
+permalink: /post/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+    fragments:
+        output: true
+        permalink: /fragment/:path/
+    projects:
+        output: true
+        permalink: /project/:path/
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
+comments_provider: giscus
+# !!!IMPORTANT!!! Please modify the following information for your own application
+# !!!Important!!! Please modify infos below to yours
+# disqus configuration reference：https://disqus.com
+# disqus:
+#     username: 
+# # gitment configuration reference：https://imsun.net/posts/gitment-introduction/
+# gitment:
+#     owner: mzlogin
+#     repo: blog-comments
+#     oauth:
+#         client_id: d2e1cbbd298958076462
+#         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# gitalk configuration reference：https://github.com/gitalk/gitalk#install
+# gitalk:
+#     owner: mzlogin
+#     repo: blog-comments
+#     clientID: d2e1cbbd298958076462
+#     clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# # utterances configuration reference：https://utteranc.es/
+# utterances:
+#     repo: mzlogin/blog-comments
+# # beaudar configuration reference：https://beaudar.lipk.org/
+# beaudar:
+#     repo: mzlogin/blog-comments
+# # giscus configuration reference：https://giscus.app/zh-CN
+# giscus:
+#     repo: mzlogin/blog-comments
+#     repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
+#     category: Announcements
+#     category-id: DIC_kwDOBY0E7c4CRtg9
+# Clickable display when using other comment components: Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # Whether to support full-text search
+    fulltext: false
+    # How many search results to display at most
+    limit: 10
+
+# ---------------- #
+#      Google      #
+# ---------------- #
+google:
+    analytics_id: # G-20FLEG5Q2W
+    adsense:
+        enabled: false
+        footer: false
+        sidebar: false
+        sidebar-detail: false
+        content_header: false
+        content_footer: false
