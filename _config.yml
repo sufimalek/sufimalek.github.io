@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://sufimalek.github.io/
+url: 
 date_format: "ordinal"
 title: Sufiyan_Malek
 subtitle: "Developer Enthusiast"
@@ -127,13 +127,14 @@ excerpt_separator: "\n\n"
 # permalink: /:year/:month/:day/:title/
 permalink: /post/:title/
 plugins:
-    - jekyll-github-metadata
+    # - jekyll-github-metadata
     - rouge
 #     - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
+    - jekyll-archives
 #     - jekyll-mentions
 collections:
     wiki:
@@ -205,3 +206,14 @@ google:
         sidebar-detail: false
         content_header: false
         content_footer: false
+
+
+  
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tag/:name/
+    category: /category/:name/
