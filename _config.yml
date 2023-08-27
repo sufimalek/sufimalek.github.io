@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://sufimalek.github.io/
+url: https://sufimalek.github.io
 date_format: "ordinal"
 title: Sufiyan_Malek
 subtitle: "Developer Enthusiast"
