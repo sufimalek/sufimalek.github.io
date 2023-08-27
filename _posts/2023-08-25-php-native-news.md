@@ -5,7 +5,7 @@ excerpt: NativePHP is a PHP framework that makes it easy to create native deskto
 author: 
 # date: 2023-04-28 07:10:00 +0800
 categories: [Php, NativePHP]
-tags: [nativephp, php]
+tags: [nativephp, php, featured]
 # image: /assets/img/21511284.jpg
 pin: true
 keywords: php, laravel, native, nativephp

@@ -794,3 +794,16 @@ img + em {
     margin-bottom: -5px;
     /* font-size: 14px !important; */
   }
+
+  .w3-tag{background-color:#000;color:#fff;display:inline-block;text-align:center}.w3-badge{border-radius:50%}
+  .w3-tiny{font-size:14px!important}
+  .w3-padding{padding:0px 4px!important}
+  .w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+  .latest-hr {
+    margin: 5px !important;
+    height: 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}

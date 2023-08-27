@@ -1,0 +1,25 @@
+<!--  list. -->
+{% assign update_list = site.posts %}
+  <div id="access-lastmod" class="post column-related sidebar-card">
+    <h3>Lastest Post</h3>
+    <div class="card-related">
+    <!-- <ul class=""> -->
+      {% for item in update_list limit:5 %}
+        {% capture number %}{{ forloop.length }}{% endcapture %}
+        {% assign imgIndex = {{forloop.index}} %}
+        {% assign post = item %}
+        {% assign url = item.url | relative_url %}
+        <div class="">
+          <a href="{{ url }}">{{ post.title }}</a>
+          {% if imgIndex == 1 %}
+            <span class="w3-tag w3-tiny w3-padding w3-red" style="transform:rotate(-10deg)">New</span>
+          {% endif %}
+          {% if imgIndex != 0 and imgIndex != 5 %}
+          <hr class="latest-hr">
+          {% endif %}
+        </div>
+      {% endfor %}
+    <!-- </ul> -->
+  </div>
+  </div>
+  <!-- #access-lastmod -->
