@@ -3,8 +3,10 @@
 }
 
 .markdown-body,body {
-    font-family: Arial,"Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",SimSun,"宋体",Helvetica,Tahoma,Arial sans-serif;
-    font-size: 16px;
+    /* font-family: Arial,"Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",SimSun,"宋体",Helvetica,Tahoma,Arial sans-serif;
+    font-size: 16px; */
+    font-family: 'Segoe UI', 'SegoeUI', 'Roboto', sans-serif;
+    font-size: 17px;
     line-height: 1.6;
     word-wrap: break-word;
     -webkit-tap-highlight-color: transparent;
@@ -795,6 +797,15 @@ img + em {
     /* font-size: 14px !important; */
   }
 
+  .dropcap-element-slot {
+    font-size: 64px;
+    font-family: 'Eb Garamond';
+    font-style: normal;
+    line-height: 52px;
+    float: left;
+    margin-right: 8px;
+}
+
   .w3-tag{background-color:#000;color:#fff;display:inline-block;text-align:center}.w3-badge{border-radius:50%}
   .w3-tiny{font-size:14px!important}
   .w3-padding{padding:0px 4px!important}
@@ -806,4 +817,41 @@ img + em {
     background: transparent;
     border: 0;
     border-bottom: 1px solid #ddd;
+}
+
+.collection-title {
+    font-family: "Eb Garamond";
+}
+
+.post-detail h3.article-sub-heading::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: -14px;
+    background: #0078D4;
+}
+
+.post-detail h3::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: -14px;
+    background: #0078D4;
+}
+
+.post-detail h2::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: -14px;
+    background: #0078D4;
 }

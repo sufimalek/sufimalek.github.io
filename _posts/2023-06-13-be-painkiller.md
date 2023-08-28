@@ -35,7 +35,7 @@ When you are driving, if you take a turn slowly, you are more likely to miss you
 
 In the context of a startup, it is important to be able to move quickly and efficiently. The market is constantly changing, and startups need to be able to adapt quickly in order to succeed. If a startup is too slow to react to changes in the market, it will be left behind by its competitors.
 
-**Explanation:**
+### Explanation:
 
 A startup that wants to provide results slowly will not be able to compete with startups that are able to provide results quickly. This is because customers and investors want to see results quickly. If a startup is not able to provide results quickly, it will be difficult for them to attract customers and investors.
 

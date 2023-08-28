@@ -20,7 +20,7 @@ mindmap2: false
 **NativePHP is a new way to build native applications, using the tools you already know**
 
 
-<span class="firstcharacter">N</span>ativePHP is a new framework for rapidly building rich, native desktop applications using PHP. If you're already a PHP developer, you'll feel right at home. If you're new to PHP, we think you'll find NativePHP easy to pick up and use. Whatever your path, we think you're going to be productive quickly.
+<span class="dropcap-element-slot">N</span>ativePHP is a new framework for rapidly building rich, native desktop applications using PHP. If you're already a PHP developer, you'll feel right at home. If you're new to PHP, we think you'll find NativePHP easy to pick up and use. Whatever your path, we think you're going to be productive quickly.
 
 
 ![Alt](/assets/images/posts/native_php_laravel.jpeg)  
