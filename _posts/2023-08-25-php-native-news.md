@@ -24,6 +24,12 @@ mindmap2: false
 
 
 ![Alt](/assets/images/posts/native_php_laravel.jpeg)  
+<div class="image-caption-container image-caption-container-ux-impr content-small-text">
+<!----><span class="image-caption"><!---->Laracon</span>
+<!---- ><span class="image-attribution image-attribution-ux-impr">© Provided by Her Zindagi</span><! -->
+</div>
+
+<br/>
 
 **NativePHP is taking the world by storm**, enabling PHP developers to create true cross-platform, native apps using the tools and technologies they already know: HTML, CSS, Javascript, and, of course, PHP.
 
