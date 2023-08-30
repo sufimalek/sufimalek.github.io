@@ -8,6 +8,9 @@ menu: Projects
 permalink: /projects/
 ---
 
+##### I'm passionate about open source software, and I've been working on a few projects in my spare time. I'm always looking for feedback and contributions, so please feel free to take a look and contribute if you'd like.
+---
+
 <!-- {{site.projects}} -->
 <div class="project-list">
     {% for project in site.projects %}

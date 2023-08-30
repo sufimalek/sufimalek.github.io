@@ -22,6 +22,12 @@
     max-width: 350px;
     margin: 10px auto
   }
+
+  .logo {
+    /* max-width: 70px; */
+    /* max-height: 40px; */
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width:50em) {

@@ -881,3 +881,14 @@ img + em {
     padding-bottom: 4px;
     opacity: 0.65;
 }
+
+
+.site-avatar {
+    float: left;
+}
+
+.logo {
+    /* max-width: 70px; */
+    max-height: 40px;
+    margin-bottom: -20px;
+  }

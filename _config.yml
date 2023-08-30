@@ -68,9 +68,9 @@ email: sufiyanmalek78@gmail.com
 #    Navigation    #
 # ---------------- #
 navs:
-#   -
-#     href: /
-#     label: Home
+  # -
+  #   href: /
+  #   label: Home
 
   -
     href: /categories/
@@ -79,7 +79,7 @@ navs:
   -
     href: /archives/
     label: Archives
-    mobile-hidden: true
+    mobile-hidden: false
 
   -
     href: /open-source/
@@ -95,9 +95,9 @@ navs:
     # href: /fragments/
     # label: Fragments
 
-#   -
-#     href: /wiki/
-#     label: Wiki
+  -
+    href: /wiki/
+    label: Wiki
 
 #   -
 #     href: /links/
@@ -151,7 +151,7 @@ collections:
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
-comments_provider: giscus
+comments_provider: utterances
 # !!!IMPORTANT!!! Please modify the following information for your own application
 # !!!Important!!! Please modify infos below to yours
 # disqus configuration reference：https://disqus.com
@@ -171,8 +171,8 @@ comments_provider: giscus
 #     clientID: d2e1cbbd298958076462
 #     clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # # utterances configuration reference：https://utteranc.es/
-# utterances:
-#     repo: mzlogin/blog-comments
+utterances:
+    repo: sufimalek/blog-comments
 # # beaudar configuration reference：https://beaudar.lipk.org/
 # beaudar:
 #     repo: mzlogin/blog-comments

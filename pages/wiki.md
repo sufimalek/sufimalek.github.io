@@ -9,7 +9,7 @@ menu: Wiki
 permalink: /wiki/
 ---
 
-> How many commands and shortcuts to memorize will make your head explode?
+> How many commands and shortcuts will make your head explode?
 
 {% case site.components.wiki.view %}
 
