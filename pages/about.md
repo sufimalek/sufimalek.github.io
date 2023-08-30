@@ -57,7 +57,7 @@ Admire the "art of elegant coding".
 
 ## Experience
 **`OrientSwiss`**: Senior Developer, India.  
-**`ParkStreet`**: Seniour Developer, India.  
+**`ParkStreet`**: Senior Developer, India.  
 **`RussMedia`**: Developer, India.  
 **`OfficeBeacon`**: Web Developer, India.  
 
