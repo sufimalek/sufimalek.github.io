@@ -5,6 +5,8 @@ author: dariubs
 categories: 
     - Golang
 tags: 
+    - go
+    - go-lang
     - golang
     - book
 description: "List of Golang books"

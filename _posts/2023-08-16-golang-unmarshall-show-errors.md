@@ -7,11 +7,12 @@ categories:
     - Golang
 tags: 
     - featured
-    - golang
+    - go-lang
+    - go
     - go-error-handling
 # image: /assets/img/symfony_logo.png
 excerpt: When you are Unmarshalling JSON in GO, you would probably get some error at some time regarding JSON format, fields or value types etc,..
-keywords: golang
+keywords: golang, go
 mermaid: false
 sequence: false
 flow: false
