@@ -4,7 +4,7 @@ title: NativePHP is a new way to build native applications
 excerpt: NativePHP is a PHP framework that makes it easy to create native desktop applications. NativePHP is a new framework for rapidly building rich, native desktop applications using PHP. If you're already a PHP developer, you'll feel right at home. If you're new to PHP, we think you'll find NativePHP easy to pick up and use.
 author: 
 # date: 2023-04-28 07:10:00 +0800
-categories: [Php, NativePHP]
+categories: [PHP, NativePHP]
 tags: [nativephp, php, featured]
 # image: /assets/img/21511284.jpg
 pin: true
