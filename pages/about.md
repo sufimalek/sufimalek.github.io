@@ -19,6 +19,9 @@ Admire the "art of elegant coding".
 
 ***
 
+
+![Alt](/assets/images/IMG_1220.jpg)
+
 ## Connect
 
 <ul>

@@ -247,3 +247,8 @@ this is a note
 ```
 
 [^1]: Here is the footnote 1 definition.
+
+
+## Theme for code
+
+<!-- https://github.com/richleland/pygments-css , https://github.com/mzlogin/rouge-themes , https://simpleit.rocks/ruby/jekyll/what-are-the-supported-language-highlighters-in-jekyll/-->
