@@ -13,7 +13,8 @@ sequence: false
 flow: false
 mathjax: false
 mindmap: false
-mindmap2: false
+mindmap2: false  
+reason: Stuck on to revert some functioanlity from release branch. and release branch consists of all changes from all devs with hundreads of commit. So, it will be better if we use squash to revert only single commit and it's done. Ths leads me to create this one.
 ---
 
 

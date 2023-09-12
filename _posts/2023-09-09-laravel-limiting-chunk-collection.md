@@ -14,6 +14,7 @@ flow: false
 mathjax: false
 mindmap: false
 mindmap2: false
+reason: I have implementing seeder to update one field and on same field I have add in where clause also, so, it, causing an error after half records. So, this lead me to create this article and to use method `chunkById`.
 ---
 
 

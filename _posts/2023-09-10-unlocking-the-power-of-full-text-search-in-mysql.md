@@ -14,6 +14,7 @@ flow: false
 mathjax: false
 mindmap: false
 mindmap2: false
+reason: found some error in my project related to FTS and I thought it will be good if I will create article on how to add full text search to functionallity. this is not related to bug I have faced, 
 ---
 
 
