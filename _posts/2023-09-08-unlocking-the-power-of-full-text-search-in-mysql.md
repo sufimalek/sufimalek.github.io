@@ -3,7 +3,7 @@ layout: post
 title: "Unlocking the Power of Full-Text Search in MySQL"
 excerpt: Chunking is a technique used in Laravel to process large datasets efficiently by breaking them into smaller segments or "chunks." Instead of retrieving and processing all records at once, you can fetch a specific number of records at a time and process them iteratively.
 author: 
-date: 2023-09-08
+date: 2023-09-10
 categories: [MySQL]
 tags: [mysql]
 pin: true

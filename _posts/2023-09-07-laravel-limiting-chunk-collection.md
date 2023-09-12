@@ -3,7 +3,7 @@ layout: post
 title: "Laravel Limiting Chunk Collection: How to Chunk Results from a Custom Query"
 excerpt: Chunking is a technique used in Laravel to process large datasets efficiently by breaking them into smaller segments or "chunks." Instead of retrieving and processing all records at once, you can fetch a specific number of records at a time and process them iteratively.
 author: 
-date: 2023-09-07
+date: 2023-09-09
 categories: [Laravel, PHP]
 tags: [laravel, php]
 pin: true
