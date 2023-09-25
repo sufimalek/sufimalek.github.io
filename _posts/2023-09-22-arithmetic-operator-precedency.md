@@ -77,5 +77,3 @@ In this case, the exponentiation operator is right-associative, so the expressio
 2. Then, `2 ^ 9` is calculated, yielding the final result `512`.
 
 Understanding operator precedence and associativity is crucial for writing correct mathematical expressions in programming. Parentheses offer fine-grained control over the order of operations, allowing you to override the default precedence rules when needed.
-
-In summary, arithmetic operators, along with parentheses precedence and operator associativity, form the foundation of mathematical computations in programming. By mastering these concepts, developers can create precise and error-free calculations, ensuring their code performs as intended.
