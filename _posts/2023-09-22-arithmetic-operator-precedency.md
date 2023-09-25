@@ -3,7 +3,7 @@ layout: post
 title: "Understanding Arithmetic Operator Precedence and Associativity"
 excerpt: Arithmetic operators are the backbone of mathematical operations in programming, enabling developers to perform calculations. To master these operators, it's essential to grasp not only their basic functionality but also how parentheses influence operator precedence and associativity.
 author: 
-date: 2023-09-15
+date: 2023-09-22
 categories: [Arithmetic]
 tags: [arithmetic, precedency]
 pin: true
