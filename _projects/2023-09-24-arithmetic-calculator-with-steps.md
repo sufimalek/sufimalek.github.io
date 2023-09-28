@@ -17,7 +17,9 @@ mindmap: false
 mindmap2: false
 ---
 
-Arithmetic Operator Precendency [Project-link]
+Arithmetic Operator Precendency [Project]
+
+Github link: [Git]
 
 ***
 
@@ -26,4 +28,5 @@ Arithmetic Operator Precendency [Project-link]
 ***
 This project is simple hobby project.
 
-[Project-link]: https://arithmetic-operator-precedency.pages.dev/
+[Project]: https://arithmetic-operator-precedency.pages.dev/
+[Git]: https://github.com/sufimalek/arithmetic-operator-precedency

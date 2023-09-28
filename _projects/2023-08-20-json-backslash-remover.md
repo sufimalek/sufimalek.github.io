@@ -17,8 +17,9 @@ mindmap: false
 mindmap2: false
 ---
 
-JSON Backslash Remover [Project-link]
+JSON Backslash Remover [Project]
 
+Github link: [Git]
 ***
 
 ![Alt](/assets/images/projects/json-backslashe-remover.png)  
@@ -29,4 +30,5 @@ This project is simple hobby project.
 How: I developed this when I have to remove remove backslashes from JSON response. So, have to convert it using JS code. So, build this.
 
 
-[Project-link]: https://json-backslashes-remover.pages.dev/
+[Project]: https://json-backslashes-remover.pages.dev/
+[Git]: https://github.com/sufimalek/remove-backslashes-json
