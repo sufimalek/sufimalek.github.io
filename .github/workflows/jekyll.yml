@@ -39,10 +39,11 @@ jobs:
           ruby-version: '3.1' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: Store variables
-        run: |
-          touch .env
-          echo 'FIREBASE_APIKEY=${{ secrets.FIREBASE_APIKEY }}' >> .env
+      # Set the GitHub secret as an environment variable
+      - name: Set Environment Variable
+        env:
+          FIREBASE_APIKEY: ${{ secrets.FIREBASE_APIKEY }}
+        run: echo 'FIREBASE_APIKEY=${{ secrets.FIREBASE_APIKEY }}' >> $GITHUB_ENV
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
