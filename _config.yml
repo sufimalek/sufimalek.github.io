@@ -217,3 +217,7 @@ jekyll-archives:
   permalinks:
     tag: /tag/:name/
     category: /category/:name/
+
+
+firebase:
+  api_key: ${{ secrets.FIREBASE_APIKEY }}
