@@ -217,8 +217,3 @@ jekyll-archives:
   permalinks:
     tag: /tag/:name/
     category: /category/:name/
-
-
-firebase:
-  api_key: ${{ env.FIREBASE_APIKEY }}
-  api_key2: <%= ENV['FIREBASE_APIKEY'] %>
