@@ -22,11 +22,9 @@
   <p id="my-form-status"></p>
 </form> -->
 <script>
-  var _apiKey = "{{ site.firebase.api_key }}";
+  var _apiKey = "{{ site.firebase_api_key }}";
   console.info("API KEY:");
-  var _apiKey2 = "{{ site.firebase.api_key2 }}";
   console.log(_apiKey);
-  console.log(_apiKey2);
 </script>
 <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
 <script type="module"  src="{{ assets_base_url }}/assets/js/subscriber.js"></script>

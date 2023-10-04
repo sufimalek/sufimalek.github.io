@@ -42,7 +42,7 @@ jobs:
       # Set the GitHub secret as an environment variable
       - name: Inject Secret
         run: |
-          echo "firebase.api_key: '${{ secrets.FIREBASE_APIKEY }}'" >> _config_secret.yml
+          echo "firebase_api_key: '${{ secrets.FIREBASE_APIKEY }}'" >> _config_secret.yml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
