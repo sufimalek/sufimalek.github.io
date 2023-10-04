@@ -2,23 +2,23 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js'
 
 // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
-import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js'
+// import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js'
 
 // Add Firebase products that you want to use
 import { getFirestore, addDoc, collection, getDocs } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBl6itIeOKOeRoYEY5yGSNKaXuCLom_8kw",
+    apiKey: _apiKey,
     authDomain: "sufiyanmalekblog.firebaseapp.com",
     projectId: "sufiyanmalekblog",
     storageBucket: "sufiyanmalekblog.appspot.com",
     messagingSenderId: "333003499979",
     appId: "1:333003499979:web:26a5013161fea6c4592e4e",
-    measurementId: "G-BEG1NSZ4GR"
+    // measurementId: "G-BEG1NSZ4GR"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
-const analytics = getAnalytics(firebaseApp);
+// const analytics = getAnalytics(firebaseApp);
 // Get a reference to Firestore
 const db = getFirestore(firebaseApp);
 
