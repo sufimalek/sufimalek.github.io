@@ -40,10 +40,9 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       # Set the GitHub secret as an environment variable
-      - name: Set Environment Variable
-        env:
-          FIREBASE_APIKEY: ${{ secrets.FIREBASE_APIKEY }}
-        run: echo 'FIREBASE_APIKEY=${{ secrets.FIREBASE_APIKEY }}' >> $GITHUB_ENV
+      - name: Inject Secret
+        run: |
+          echo "firebase.api_key: '${{ secrets.FIREBASE_APIKEY }}'" >> _config_secret.yml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
@@ -52,7 +51,6 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-          FIREBASE_APIKEY: ${{ secrets.FIREBASE_APIKEY }}
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v2
