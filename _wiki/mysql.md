@@ -5,6 +5,7 @@ cate1: Basis
 cate2: Database
 description: MySQL Wiki
 keywords: MySQL
+date_created: 2023-08-08
 ---
 
 ## Use
