@@ -47,15 +47,15 @@ After Forking this project, there are still some things you need to do to make y
 
     You can delete all except the template.md file in the following folder, and then add your own content.
 
-    * In the \_posts folder are my published blog posts.
-    * Inside the \_drafts folder are my unpublished blog posts.
-    * In the \_wiki folder are my published wiki pages.
-    * The \_fragments folder contains short article fragments that I have published.
+    * In the `\_posts` folder are my published blog posts.
+    * Inside the `\_drafts` folder are my unpublished blog posts.
+    * In the `\_wiki` folder are my published wiki pages.
+    * The `\_fragments` folder contains short article fragments that I have published.
     *The images folder contains the images used in my articles and pages.
 
 5. Modify the "About" page.
 
-    The content of the pages/about.md file corresponds to the "About" page of the website. The content inside is mostly personal-related. Replace them with your own information, including the data in the skills.yml and social.yml files in the \_data directory.
+    The content of the pages/about.md file corresponds to the "About" page of the website. The content inside is mostly personal-related. Replace them with your own information, including the data in the `skills.yml` and `social.yml` files in the `\_data` directory.
 
 
 ## Use documentation
@@ -98,7 +98,7 @@ bundle exec jekyll serve --config _config.yml,_config_secret.yml
 
 ## Newsletter
 
-Implemented firestore to save email data
+Implemented firestore to save email data    
 used github secret keys to save secret keys and environment keys
 
 ## next in bucket

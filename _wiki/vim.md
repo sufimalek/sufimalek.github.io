@@ -3,8 +3,9 @@ layout: wiki
 title: Vim
 cate1: Tools
 cate2: Editor
-description: 个人最常用的 Vim 常用操作。
+description: The most commonly used Vim operations by individuals.
 keywords: Vim
+date_created: 2023-07-05
 ---
 ### move
 

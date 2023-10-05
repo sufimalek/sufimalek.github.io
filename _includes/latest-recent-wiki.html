@@ -1,0 +1,29 @@
+<!--  list. -->
+{% assign update_list = site.wiki %}
+  <div id="access-lastmod" class="post column-related sidebar-card">
+    <h3>Lastest Wiki</h3>
+    <div class="card-related">
+    <!-- <ul class=""> -->
+      {% for item in update_list %}
+        {% if item.date_created %}
+          {% assign portfolio_count = portfolio_count | plus: 1 %}
+          {% if portfolio_count <= 3 %}
+            {% assign post = item %}
+            {% assign url = item.url | relative_url %}
+            <!-- <div class=""> -->
+              <a href="{{ url }}"><small>({{ post.cate2 }})</small> {{ post.title }}</a>
+              {% if portfolio_count == 1 %}
+                <span class="w3-tag w3-tiny w3-padding w3-red" style="transform:rotate(-10deg); font-size:11px!important">New</span>
+              {% endif %}
+              {% if portfolio_count != 0 and portfolio_count != 3 %}
+              |
+              <!-- </div> -->
+              {% endif %}
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+
+    <!-- </ul> -->
+  </div>
+  </div>
+  <!-- #access-lastmod -->
