@@ -68,7 +68,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go application
-RUN CGO_ENABLED=0 GOOS=linux go build -o optimized-app .
+RUN go build -o optimized-app .
 
 # Stage 2: Create a minimal runtime image
 FROM alpine:latest
@@ -96,7 +96,7 @@ ENTRYPOINT ["./optimized-app"]
 
 - `COPY . .`: The source code is copied into the container.
 
-- `RUN CGO_ENABLED=0 GOOS=linux go build -o optimized-app`: The Go application is built for Linux with CGO disabled to make the binary more portable and to avoid needing the C library at runtime.
+- `RUN go build -o optimized-app`: The Go application is built for Linux with CGO disabled to make the binary more portable and to avoid needing the C library at runtime.
 
 **Stage 2: Minimal Runtime Stage**
 - `FROM alpine:latest`: The second stage uses a minimal Alpine Linux base image that will contain only the compiled Go binary.

@@ -52,9 +52,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go application
-# - CGO_ENABLED=0: Disables CGO for a fully static binary
-# - GOOS=linux: Target Linux
-RUN CGO_ENABLED=0 GOOS=linux go build -o optimized-app .
+RUN go build -o optimized-app .
 
 # Stage 2: Create a minimal image using scratch
 FROM scratch
@@ -73,7 +71,7 @@ ENTRYPOINT ["./optimized-app"]
 
 - **Stage 1 (Builder Stage):**
   - `FROM golang:1.18-alpine AS builder`: This uses the Go Alpine image to build the application.
-  - `RUN CGO_ENABLED=0 GOOS=linux go build -o optimized-app`: This builds the Go application as a static binary (no CGO) for Linux.
+  - `RUN go build -o optimized-app`: This builds the Go application as a static binary (no CGO) for Linux.
 
 - **Stage 2 (Final Stage using Scratch):**
   - `FROM scratch`: The `scratch` image is an empty base image.
